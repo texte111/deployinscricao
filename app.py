@@ -87,11 +87,11 @@ def gerar_link_pagamento(nick, login):
     preference_data = {
         "items": [item],
         "back_urls": {
-            "success": "https://campeonatoclanreality.railway.app/pagamento/sucesso",
-            "failure": "https://campeonatoclanreality.railway.app/pagamento/falha",
-            "pending": "https://campeonatoclanreality.railway.app/pagamento/pendente"
+            "success": "http://localhost:5000/pagamento/sucesso",
+            "failure": "http://localhost:5000/pagamento/falha",
+            "pending": "http://localhost:5000/pagamento/pendente"
         },
-        "notification_url": "https://campeonatoclanreality.railway.app/pagamento/notificacao"
+        "notification_url": "http://localhost:5000/pagamento/notificacao"
     }
 
     try:
